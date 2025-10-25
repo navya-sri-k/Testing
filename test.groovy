@@ -4,6 +4,7 @@ pipeline {
     environment {
         // You can define environment variables here
         MY_ENV_VAR = 'example_value'
+        BRANCH_NAME = 'main'  // Set your specific branch name here
     }
 
         stage('Build') {
