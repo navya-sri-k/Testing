@@ -1,5 +1,29 @@
 pipeline {
+    agent any
+
     environment {
-        BRANCH_NAME = 'main'  
+        BRANCH_NAME = 'main'  // Set the branch to 'main'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out the code...'
+                checkout scm  // Checkout the code from the repository
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Running build...'
+                sh 'echo "Building project..."'  // Placeholder for your actual build command
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed.'  // Always runs after the pipeline ends
+        }
     }
 }
