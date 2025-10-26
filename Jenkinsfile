@@ -4,7 +4,7 @@ pipeline {
     environment {
         BRANCH_NAME = 'main'  // Set the branch to 'main'
         MAVEN_HOME = '/usr/bin/mvn'  // Set the Maven installation path (you might need to adjust this depending on your setup)
-        MAVEN_VERSION = '3.9.11'         // Set Maven version
+        MAVEN_VERSION = '3.6.3'         // Set Maven version
         PATH = "${MAVEN_HOME}/bin:${env.PATH}"  // Ensure Maven is on the PATH
     }
 
