@@ -6,7 +6,7 @@ pipeline {
     }
     
     tools {
-        maven 'Maven 3.6.1' // This name must match the Maven installation name in Jenkins
+        maven 'Maven 3.6.3' // This name must match the Maven installation name in Jenkins
     }
     
     stages {
