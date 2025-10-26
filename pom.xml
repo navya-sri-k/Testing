@@ -13,7 +13,7 @@
 
     <!-- Maven Version -->
     <properties>
-        <maven.version>3.9.11</maven.version>
+        <maven.version>3.6.3</maven.version>
     </properties>
 
     <dependencies>
